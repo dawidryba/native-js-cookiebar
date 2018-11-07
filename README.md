@@ -40,7 +40,7 @@ Native JS Cookie Bar with many options
       expires: 356, // int
   },
   css: {
-      file: 'cookiebar.css', // string or false
+      file: 'cookiebar.min.css', // string or false
       parent: '', // string
       text: '', // string
       button: '', // string
