@@ -1,0 +1,41 @@
+{
+  "name": "native-js-cookiebar",
+  "version": "1.0.0",
+  "description": "Native JS Cookie Bar with many options",
+  "main": "cookiebar.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dawidryba/native-js-cookiebar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dawidryba/native-js-cookiebar/issues"
+  },
+  "homepage": "https://github.com/dawidryba/native-js-cookiebar",
+  "author": "Dawid Rybacki",
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "dependencies": {
+    "deepmerge": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "flexibility": "^2.0.1",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

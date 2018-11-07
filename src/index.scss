@@ -1,0 +1,113 @@
+$background: #363636;
+$textColor: #fff;
+$borderButtonColor: #666;
+$buttonAcceptBg: #00c851;
+$buttonAcceptBgHover: #00f361;
+
+.cookie_bar {
+    position: fixed;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    transition: 200ms;
+    opacity: 0;
+
+    &.cookie_bar--animate {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.cookie_bar__inner {
+    padding: 5px 10px;
+    background: $background;
+    color: $textColor;
+    font-size: 1rem;
+
+    &::before,
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+        width: 100%;
+    }
+}
+.cookie_bar__text {
+    
+}
+.cookie_bar__left {
+    float: left;
+    padding: 8px 0;
+}
+
+.cookie_bar__right {
+    float: right;
+    max-width: 300px;
+    padding-left: 20px;
+}
+
+.cookie_bar__button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 25px;
+    text-decoration: none;
+    background: none;
+    font-size: 1rem;
+    margin-right: 10px;
+    color: $textColor;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.cookie_bar__button--accept { 
+    background: $buttonAcceptBg;
+
+    &:hover {
+        background: $buttonAcceptBgHover;
+    }
+}
+
+// Another Views
+
+.cookie_bar {
+    &.cookie_bar--left {
+        right: auto;
+        left: 10px;
+
+        max-width: 550px;
+
+        &.cookie_bar--animate {
+            bottom: 10px;
+        }
+    }
+    &.cookie_bar--right {
+        left: auto;
+        right: 10px;
+
+        max-width: 550px;
+
+        &.cookie_bar--animate {
+            bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cookie_bar {
+        &.cookie_bar--left,
+        &.cookie_bar--right {
+            right: 0;
+            left: 0;
+            max-width: unset;
+            &.cookie_bar--animate {
+                bottom: 0;
+            }
+        }
+    }
+}
