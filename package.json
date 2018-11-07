@@ -1,6 +1,6 @@
 {
   "name": "native-js-cookiebar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native JS Cookie Bar with many options",
   "main": "cookiebar.js",
   "scripts": {

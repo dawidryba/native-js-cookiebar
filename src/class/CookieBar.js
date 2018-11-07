@@ -21,7 +21,7 @@ export default class CookieBar {
                 expires: 356,
             },
             css: {
-                file: 'https://cdn.jsdelivr.net/npm/native-js-cookiebar@1.0.0/dist/cookiebar.min.css',
+                file: 'https://cdn.jsdelivr.net/npm/native-js-cookiebar@1.0.1/dist/cookiebar.min.css',
                 parent: '',
                 text: '',
                 button: '',
