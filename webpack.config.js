@@ -65,8 +65,8 @@ module.exports = (env, options) => {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: "cookiebar.css",
-                chunkFilename: "cookiebar.css"
+                filename: "cookiebar.min.css",
+                chunkFilename: "cookiebar.min.css"
             }),
             new webpack.DefinePlugin({
                 "process.env.NODE_ENV": JSON.stringify("production")
