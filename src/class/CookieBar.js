@@ -21,7 +21,7 @@ export default class CookieBar {
                 expires: 356,
             },
             css: {
-                file: 'cookiebar.css',
+                file: 'https://cdn.jsdelivr.net/npm/native-js-cookiebar@1.0.0/dist/cookiebar.min.css',
                 parent: '',
                 text: '',
                 button: '',
@@ -187,13 +187,13 @@ export default class CookieBar {
         
         let rightSide = '';
         if (this._args.link) {
-            rightSide += `<a href="${this._args.link}" title="${this._args.more}" ${(this._args.link_blank ? 'target="_blank"' : '')} rel="nofollow" class="cookie_bar__button cookie_bar__button--more ${this._args.css.button_more}">${this._args.more}</a>`
+            rightSide += `<a href="${this._args.link}" title="${this._args.more}" ${(this._args.link_blank ? 'target="_blank"' : '')} rel="nofollow" class="cookie_bar__button cookie_bar__button--more ${this._args.css.button_more}">${this._args.more}</a>`;
         }
-        rightSide += `<button id="${this._args.accept_id}" class="cookie_bar__button cookie_bar__button--accept ${this._args.css.button_accept}">${this._args.accept}</button>`
+        rightSide += `<button id="${this._args.accept_id}" class="cookie_bar__button cookie_bar__button--accept ${this._args.css.button_accept}">${this._args.accept}</button>`;
         html = html.replace('##right_side##', rightSide);
 
         if (this._args.style.bg || this._args.style.color) {
-            const styleInner = `style="${this._args.style.bg ? 'background:' + this._args.style.bg + ';' : ''}${this._args.style.color ? ' color:' + this._args.style.color + ';' : ''}"`
+            const styleInner = `style="${this._args.style.bg ? 'background:' + this._args.style.bg + ';' : ''}${this._args.style.color ? ' color:' + this._args.style.color + ';' : ''}"`;
             html = html.replace('##style.inner##', styleInner);
         } else {
             html = html.replace('##style.inner##', '');

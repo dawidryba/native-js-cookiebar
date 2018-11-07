@@ -4,7 +4,7 @@ Native JS Cookie Bar with many options
 ## How run script
 
 ```html
-<script src="cookiebar.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/native-js-cookiebar@1.0.0/dist/cookiebar.min.js" defer></script>
 <script>
     window.cookieBarRun = function () {
         var args = {
@@ -14,7 +14,7 @@ Native JS Cookie Bar with many options
             more: 'Więcej informacji',
             text: 'Ta strona wykorzystuje pliki cookies',
             css: {
-                parent: 'cookie_bar--right'
+                parent: 'cookie_bar--right',
             }
         }
 
@@ -40,7 +40,7 @@ Native JS Cookie Bar with many options
       expires: 356, // int
   },
   css: {
-      file: 'cookiebar.min.css', // string or false
+      file: 'https://cdn.jsdelivr.net/npm/native-js-cookiebar@1.0.0/dist/cookiebar.min.css', // string or false
       parent: '', // string
       text: '', // string
       button: '', // string
