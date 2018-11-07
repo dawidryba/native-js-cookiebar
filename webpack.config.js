@@ -14,7 +14,7 @@ module.exports = (env, options) => {
             ]
         },
         output: {
-            path: path.resolve(__dirname, 'public'),
+            path: path.resolve(__dirname, 'dist'),
             filename: 'cookiebar.min.js'
         },
         module: {
@@ -50,7 +50,7 @@ module.exports = (env, options) => {
             ]
         },
         devServer: {
-            contentBase: path.join(__dirname, 'public'),
+            contentBase: path.join(__dirname, 'dist'),
             compress: false
         },
         optimization: {
