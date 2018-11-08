@@ -21,7 +21,7 @@ export default class CookieBar {
                 expires: 356,
             },
             css: {
-                file: 'https://cdn.jsdelivr.net/npm/native-js-cookiebar@1.0.1/dist/cookiebar.min.css',
+                file: 'https://cdn.jsdelivr.net/npm/native-js-cookiebar@latest/dist/cookiebar.min.css',
                 parent: '',
                 text: '',
                 button: '',
@@ -61,14 +61,15 @@ export default class CookieBar {
          * @type {Object}
          */
         this._customEvent = this._addCustomEvent();;
-
-        if (!this._getCallback) {
+        
+        if (!this._getCallback()) {
             console.warn(`Don't see init function: ${this._callback}, or return value isn't object`);
             return false;
         }
         
         this._body = document.getElementsByTagName('body')[0];
         this._args = this._setArgs();
+        
         this._cookie = new CookieManagement(this._args.cookie.name);
         
         if (this._cookie.get() == 1) {
